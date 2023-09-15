@@ -18,6 +18,8 @@ ul {
   padding: 32px 10px;
   margin-bottom: 36px;
   margin-bottom: 36px;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 12px;
   max-width: 100%;
   width: 360px;

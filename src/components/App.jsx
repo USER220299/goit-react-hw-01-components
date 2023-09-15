@@ -26,7 +26,14 @@ export const App = () => {
   //   </div>
   // );
   return (
-    <>
+    <div
+      style={{
+        width:'100%',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        padding:'24px',
+        backgroundColor: 'rgba(222, 227, 230, 0.996)',
+      }}>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -37,6 +44,6 @@ export const App = () => {
       <Statistics  stats={data} />
      <FriendList friends={friends} />
      <TransactionHistory items={transactions} />
-    </>
+    </div>
   );
 };

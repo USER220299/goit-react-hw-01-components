@@ -16,6 +16,8 @@ ul {
   align-items: center;
   justify-content: center;
   padding: 32px 10px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 36px;
   background-color: aliceblue;
   border-radius: 12px;

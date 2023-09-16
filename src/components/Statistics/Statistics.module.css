@@ -1,7 +1,7 @@
 .list {
   list-style: none;
 }
-
+h2,
 p {
   margin: 0;
 }
@@ -33,6 +33,9 @@ ul {
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
+  text-transform: uppercase;
+  padding-top: 16px;
+  padding-bottom: 32px;
   color: #2e2f42;
 }
 .statList {

@@ -28,12 +28,13 @@ export const App = () => {
   return (
     <div
       style={{
-        width:'100%',
+        width: '100%',
         marginLeft: 'auto',
         marginRight: 'auto',
-        padding:'24px',
+        padding: '24px',
         backgroundColor: 'rgba(222, 227, 230, 0.996)',
-      }}>
+      }}
+    >
       <Profile
         username={user.username}
         tag={user.tag}
@@ -41,9 +42,10 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <Statistics  stats={data} />
-     <FriendList friends={friends} />
-     <TransactionHistory items={transactions} />
+
+      <Statistics title="Upload stats" stats={data} />
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </div>
   );
 };

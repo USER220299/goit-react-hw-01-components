@@ -18,7 +18,6 @@ export const FriendListItem = ({ avatar, isOnline, name }) => {
   );
 };
 
-// key={friend.id}
 
 FriendListItem.propTypes = {
   avatar: PropTypes.string.isRequired,

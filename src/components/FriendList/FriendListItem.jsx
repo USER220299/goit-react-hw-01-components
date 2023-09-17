@@ -3,17 +3,17 @@ import PropTypes from 'prop-types';
 
 export const FriendListItem = ({ avatar, isOnline, name }) => {
   return (
-    <li className={`${css.item}`}>
+    <li className={css.item}>
       <span
-        className={isOnline ? `${css.statusTrue}` : `${css.statusFalse}`}
+        className={isOnline ? css.statusTrue : css.statusFalse}
       ></span>
       <img
-        className={`${css.avatar}`}
+        className={css.avatar}
         src={avatar}
         alt="User avatar"
         width="48"
       />
-      <p className={`${css.name}`}>{name}</p>
+      <p className={css.name}>{name}</p>
     </li>
   );
 };

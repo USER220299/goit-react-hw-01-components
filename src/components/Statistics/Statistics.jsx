@@ -3,14 +3,13 @@ import PropTypes from 'prop-types';
 
 export const Statistics = ({ stats, title }) => {
   return (
-    <section className={`${css.statistics}`}>
-      <h2 className={`${css.title}`}>Upload stats</h2>
-      {/* {title && <Title>{title}</Title>} */}
-      <ul className={`${css.statList} ${css.list}`}>
+    <section className={css.statistics}>
+     {title && <h2 className={css.title}>{title}</h2>}
+      <ul className={css.statList}>
         {stats.map(item => (
-          <li className={`${css.item}`} key={item.id}>
-            <span className={`${css.label}`}>{item.label}</span>
-            <span className={`${css.percentage}`}>{item.percentage}%</span>
+          <li className={css.item} key={item.id}>
+            <span className={css.label}>{item.label}</span>
+            <span className={css.percentage}>{item.percentage}%</span>
           </li>
         ))}
       </ul>
@@ -19,6 +18,7 @@ export const Statistics = ({ stats, title }) => {
 };
 
 Statistics.propTypes = {
+  title: PropTypes.string.isRequired,
   stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
